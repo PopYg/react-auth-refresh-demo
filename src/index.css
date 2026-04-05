@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #10213a;
+  --ink-soft: #4a617f;
+  --line: #d8e0ec;
+  --heading: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+  --body: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.45;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(130, 182, 237, 0.18), transparent 28%),
+    radial-gradient(circle at 84% 12%, rgba(160, 220, 174, 0.2), transparent 25%),
+    radial-gradient(circle at 22% 90%, rgba(248, 214, 148, 0.22), transparent 28%),
+    #f7f9fc;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-family: var(--heading);
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 0 12px 16px;
+}

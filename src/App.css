@@ -1,0 +1,498 @@
+.app-shell {
+  max-width: 1080px;
+  margin: 20px auto;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: linear-gradient(155deg, #fff8ec 0%, #f5f8ff 46%, #ecf6f1 100%);
+  box-shadow: 0 16px 34px rgba(16, 29, 48, 0.11);
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 28px 28px 20px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.73rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: clamp(1.35rem, 3.4vw, 2rem);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.meta {
+  text-align: right;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.status-authenticated {
+  color: #0f5132;
+  border-color: #89c8ae;
+  background: #e7f9ef;
+}
+
+.status-anonymous {
+  color: #70390a;
+  border-color: #edbb7b;
+  background: #fff0df;
+}
+
+.status-checking {
+  color: #0d4870;
+  border-color: #8ac1e8;
+  background: #e8f5ff;
+}
+
+.local-nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 28px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.local-nav a {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid #dce3ef;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.local-nav a:hover {
+  background: #eef2ff;
+  transform: translateY(-1px);
+}
+
+.stage {
+  padding: 24px 28px 30px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.card-login {
+  max-width: 560px; margin:0 auto;
+}
+
+.login-mode-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mode-button {
+  border: 1px solid #d4dce8;
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: #f8fbff;
+  color: #324764;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mode-active {
+  border-color: #8c7bff;
+  background: #f2efff;
+  color: #3f2f95;
+}
+
+.certificate-entry {
+  border: 1px dashed #d1d8e5;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f9fbff;
+}
+
+.panel-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.input {
+  border: 1px solid #ccd4e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+.input:focus {
+  outline: 2px solid #8cd7b4;
+  outline-offset: 1px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button,
+.button-secondary,
+.button-ghost {
+  border: 0;
+  border-radius: 11px;
+  padding: 9px 12px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button {
+  color: #f8fffb;
+  background: linear-gradient(135deg, #0c8b6a, #105f63);
+}
+
+.button-secondary {
+  color: #1d3557;
+  background: #e4ecff;
+}
+
+.button-ghost {
+  color: #5a3d11;
+  background: #ffefd8;
+}
+
+.button:disabled,
+.button-secondary:disabled,
+.button-ghost:disabled {
+  opacity: 0.58;
+  cursor: not-allowed;
+}
+
+.muted {
+  color: var(--ink-soft);
+}
+
+.callout {
+  border: 1px dashed #b3c7d6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #f4fbff;
+  font-size: 0.85rem;
+}
+
+.error-text {
+  margin: 2px 0;
+  color: #b12626;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.info-grid {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metric {
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 11px 12px;
+  background: #fafcff;
+}
+
+.metric dt {
+  margin: 0;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.metric dd {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.doc-list,
+.log-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.doc-list li,
+.log-list li {
+  margin: 5px 0;
+  color: #223451;
+}
+
+.tiny {
+  font-size: 0.8rem;
+}
+
+.cert-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 30, 42, 0.72);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.cert-modal {
+  width: min(980px, 100%);
+  max-height: calc(100vh - 50px);
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+  background: #f6f6f7;
+  padding: 24px 26px 20px;
+  position: relative;
+}
+
+.cert-close {
+  position: absolute;
+  right: 22px;
+  top: 14px;
+  border: 0;
+  background: transparent;
+  color: #555;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cert-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 24px;
+}
+
+.cert-panel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.cert-heading {
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #8d5be7;
+  font-size: 1.14rem;
+  color: #23252a;
+}
+
+.cert-provider-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cert-provider-card {
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 8px;
+  padding: 4px;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.cert-provider-selected {
+  border-color: #8d5be7;
+  background: #ece7ff;
+}
+
+.cert-provider-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.cert-provider-name {
+  font-size: 0.72rem;
+  color: #30333d;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.cert-field-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.cert-inline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.cert-prefix {
+  max-width: 92px;
+}
+
+.cert-agreement-block {
+  border: 1px solid #d3d6dd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cert-agreement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e3e6ec;
+}
+
+.cert-all-agree {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.cert-agreement-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.cert-agreement-row:last-child {
+  border-bottom: 0;
+}
+
+.cert-check-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.9rem;
+}
+
+.cert-view-btn {
+  min-width: 58px;
+  border: 1px solid #d6d9df;
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: #fafbfc;
+  color: #424a56;
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.cert-status {
+  margin: 14px 0 8px;
+  color: #1d3f77;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cert-request-btn {
+  width: 100%;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #060606;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.cert-request-btn:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+@media (max-width: 860px) {
+  .topbar {
+    flex-direction: column;
+    padding: 24px 18px 16px;
+  }
+
+  .meta {
+    text-align: left;
+  }
+
+  .local-nav {
+    padding: 10px 18px;
+  }
+
+  .stage {
+    padding: 16px 18px 20px;
+  }
+
+  .panel-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-provider-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cert-inline {
+    grid-template-columns: 1fr;
+  }
+}
