@@ -4,10 +4,6 @@
 만료된 access token을 사용자 흐름을 깨지 않고 복구하는 인증 패턴을 React로 구현한 데모입니다.  
 핵심 주제는 `axios 인터셉터`, `single-flight refresh`, `보호 라우트`입니다.
 
-## 공통 운영 문서
-- 다른 데모로 이어갈 때 사용할 작업 기준: [docs/DEMO_WORKFLOW_KO.md](./docs/DEMO_WORKFLOW_KO.md)
-- 다음 채팅에서 바로 이어서 시작할 작업: [docs/NEXT_CHAT_HANDOFF_KO.md](./docs/NEXT_CHAT_HANDOFF_KO.md)
-
 ## 이 데모를 만든 이유
 - 로그인 화면 구현을 넘어 인증 상태 흐름 제어 패턴을 명확히 보여주기 위함
 - NDA 대상 실무 코드를 공개하지 않고, 구조 패턴만 일반화한 샘플을 제공하기 위함
