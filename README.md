@@ -6,6 +6,7 @@
 
 ## 공통 운영 문서
 - 다른 데모로 이어갈 때 사용할 작업 기준: [docs/DEMO_WORKFLOW_KO.md](./docs/DEMO_WORKFLOW_KO.md)
+- 다음 채팅에서 바로 이어서 시작할 작업: [docs/NEXT_CHAT_HANDOFF_KO.md](./docs/NEXT_CHAT_HANDOFF_KO.md)
 
 ## 이 데모를 만든 이유
 - 로그인 화면 구현을 넘어 인증 상태 흐름 제어 패턴을 명확히 보여주기 위함
